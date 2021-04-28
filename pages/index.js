@@ -1,14 +1,17 @@
 import Head from "next/head";
 
-import styles from "../styles/Home.module.css";
+import styles from "styles/Home.module.css";
+import Navbar from "modules/Navbar";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar />
       <div class="grid grid-cols-1 sm:grid-cols-2 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16">
         <div class="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-black sm:bg-none">
           <p class="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
